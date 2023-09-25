@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dados de Pessoas</title>
+</head>
+<body>
+    <h1>Dados de Pessoas</h1>
+    <script>
+        var pessoas = [
+            { nome: "João", idade: 30, cidade: "São Paulo" },
+            { nome: "Maria", idade: 25, cidade: "Rio de Janeiro" },
+            { nome: "Carlos", idade: 40, cidade: "Belo Horizonte" },
+            { nome: "Ana", idade: 22, cidade: "Curitiba" },
+            { nome: "Pedro", idade: 28, cidade: "Porto Alegre" }
+        ];
+
+        document.write("<p>Dados das pessoas:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < pessoas.length; i++) {
+            document.write("<li>Nome: " + pessoas[i].nome + ", Idade: " + pessoas[i].idade + ", Cidade: " + pessoas[i].cidade + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>

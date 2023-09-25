@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dados de Pessoas</title>
+</head>
+<body>
+    <h1>Dados de Pessoas</h1>
+    <script>
+        var pessoas = [];
+
+        do {
+            var nome = prompt("Digite o nome da pessoa:");
+            var idade = parseInt(prompt("Digite a idade da pessoa:"));
+            var cidade = prompt("Digite o nome da cidade que mora:");
+            
+            pessoas.push({ nome: nome, idade: idade, cidade: cidade });
+
+            var continuar = prompt("Deseja cadastrar mais uma pessoa? (sim/não)").toLowerCase();
+        } while (continuar === "sim");
+
+        document.write("<p>Dados das pessoas:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < pessoas.length; i++) {
+            document.write("<li>Nome: " + pessoas[i].nome + ", Idade: " + pessoas[i].idade + ", Cidade: " + pessoas[i].cidade + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>

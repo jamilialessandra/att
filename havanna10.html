@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Troca de Elementos em Vetor</title>
+</head>
+<body>
+    <h1>Troca de Elementos em Vetor</h1>
+    <script>
+        
+        var vetorN = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+        
+        function trocarElementos(vetor, i, j) {
+            var temp = vetor[i];
+            vetor[i] = vetor[j];
+            vetor[j] = temp;
+        }
+
+        
+        for (var i = 0; i < 10; i++) {
+            trocarElementos(vetorN, i, vetorN.length - 1 - i);
+        }
+
+        
+        document.write("<p>Vetor após as trocas:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < vetorN.length; i++) {
+            document.write("<li>" + vetorN[i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>

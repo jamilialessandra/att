@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quadrados de Números Ímpares</title>
+</head>
+<body>
+    <h1>Quadrados de Números Ímpares</h1>
+    <script>
+        function calcularQuadradosImpares() {
+            var numerosImpares = [];
+            
+            for (var i = 1; i <= 20; i++) {
+                if (i % 2 !== 0) { // Verifica se o número é ímpar
+                    numerosImpares.push(i * i); // Armazena o quadrado do número ímpar
+                }
+            }
+            
+            return numerosImpares;
+        }
+        
+        var quadradosImpares = calcularQuadradosImpares();
+        
+        document.write("<p>Quadrados dos números ímpares de 1 a 20:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < quadradosImpares.length; i++) {
+            document.write("<li>" + quadradosImpares[i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>

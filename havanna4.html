@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soma de Valores de Vetores</title>
+</head>
+<body>
+    <h1>Soma de Valores de Vetores</h1>
+    <script>
+        var vetorA = [25, 6, -9, 22, 34];
+        var vetorB = [56, 12, 0, -89, 4];
+        var resultadoSoma = [];
+
+        for (var i = 0; i < vetorA.length; i++) {
+            resultadoSoma.push(vetorA[i] + vetorB[i]);
+        }
+
+        document.write("<p>Resultado da soma dos valores nas mesmas posições:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < resultadoSoma.length; i++) {
+            document.write("<li>" + resultadoSoma[i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>

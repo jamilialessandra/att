@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Jamili" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nomes = ["João", "Maria", "Carlos", "Ana", "Pedro", "Laura", "Rafael", "Isabel"];
+
+
+        var sobrenomes = ["Silva", "Santos", "Pereira", "Lima", "Ferreira", "Almeida", "Martins", "Gonçalves"];
+
+
+        var nome_completo = [];
+        for (var i = 0; i < nomes.length; i++) {
+        var nomeCompleto = nomes[i] + " " + sobrenomes[i];
+        nome_completo.push(nomeCompleto);
+        }
+
+
+        console.log(nome_completo);
+
+        var nomes = ["João", "Maria", "Carlos", "Ana", "Pedro", "Laura", "Rafael", "Isabel"];
+
+var nomeBusca = prompt("Digite um nome para buscar:");
+
+var indice = nomes.indexOf(nomeBusca);
+
+if (indice !== -1) {
+    document.write("<p>Nome encontrado: " + nomes[indice] + "</p>");
+} else {
+    alert("Nome não encontrado.");
+}
+
+    </script>
+</body>
+</html>

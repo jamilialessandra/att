@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vetor C com Somas</title>
+</head>
+<body>
+    <h1>Vetor C com Somas</h1>
+    <script>
+        var vetorA = [25, 6, -9, 22, 34];
+        var vetorB = [56, 12, 0, -89, 4];
+        var vetorC = [];
+
+        for (var i = 0; i < vetorA.length; i++) {
+            vetorC.push(vetorA[i] + vetorB[i]);
+        }
+
+        document.write("<p>Valores do vetor C com as somas nas mesmas posições:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < vetorC.length; i++) {
+            document.write("<li>" + vetorC[i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>
+

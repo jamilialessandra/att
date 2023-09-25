@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concatenação de Vetores</title>
+</head>
+<body>
+    <h1>Concatenação de Vetores</h1>
+    <script>
+        var vetorA = [25, 6, -9, 22, 34];
+        var vetorB = [56, 12, 0, -89, 4];
+        var vetorC = vetorA.concat(vetorB);
+
+        document.write("<p>Valores do vetor A:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < vetorA.length; i++) {
+            document.write("<li>" + vetorA[i] + "</li>");
+        }
+        document.write("</ul>");
+
+        document.write("<p>Valores do vetor B:</p>");
+        document.write("<ul>");
+        for (var i = 0; i < vetorB.length; i++) {
+            document.write("<li>" + vetorB[i] + "</li>");
+        }
+        document.write("</ul>");
+
+        document.write("<p>Valores do vetor C (concatenação de A e B):</p>");
+        document.write("<ul>");
+        for (var i = 0; i < vetorC.length; i++) {
+            document.write("<li>" + vetorC[i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>
