@@ -46,3 +46,10 @@ app.post("/salvarProduto", (req, res)=>{
     })
 });
 
+app.get("produtolist", (req, res)=>{
+    Produto.finAll({raw : true }).then(produtos=>{
+        console.log(produtos)
+    });
+
+    res.render("index");
+});
