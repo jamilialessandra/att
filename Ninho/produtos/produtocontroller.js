@@ -21,10 +21,11 @@ router.post("/salvarProduto", (req, res)=>{
     })
 });
 
-router.get("produtolist", (req, res)=>{
+router.get("produtos", (req, res)=>{
     Produto.finAll({raw : true }).then(produtos=>{
         console.log(produtos)
     });
 
-    res.render("index");
+    res.render("produtos/index");
 });
+module.exports = router;

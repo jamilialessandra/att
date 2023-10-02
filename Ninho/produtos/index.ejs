@@ -2,7 +2,9 @@
 <%- include('partials/navbar') %> 
 
 <div class="container">
-
-    bla 
+    <% Produto.fotEach(produtos =>{%>
+        <p><%=produtos.Titulo %</p>
+        <p><%=<produto.Descricao %></p>
+   <% }) %>
 </div>
 <%- include('partials/footer') %> 
