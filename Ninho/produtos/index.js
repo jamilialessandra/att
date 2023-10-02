@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const connection = require("./database/database");
+const connection = require("../database/database");
 
-const Produto = require("./produtos/Produto")
+const Produto = require("./Produto")
 const produtocontroller =
-require("./produtos/produtocontroller");
+require("./produtocontroller");
 
 app.use("/",produtocontroller);
 
